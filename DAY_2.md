@@ -1,5 +1,20 @@
 **AWS Cloud Training Workshop - Day 2**
 
+## **Today's Agenda (From Class Whiteboard)**
+- **Access Key and Security Key**
+- **Creating Budget**
+- **IAM Concepts:**
+  - User
+  - Group
+  - Policy
+  - Role
+- **AWS CLI:**
+  - Installation
+  - Running `aws s3 ls`
+- **S3 Service**
+- **EC2/S3 Role Assignments**
+
+
 ## **IAM User**
 1. IAM (Identity and Access Management) is a **global service**.
 2. It is completely **free** to create any number of users.
@@ -93,17 +108,5 @@
 
 ---
 
-## **Today's Agenda (From Class Whiteboard)**
-- **Access Key and Security Key**
-- **Creating Budget**
-- **IAM Concepts:**
-  - User
-  - Group
-  - Policy
-  - Role
-- **AWS CLI:**
-  - Installation
-  - Running `aws s3 ls`
-- **S3 Service**
-- **EC2/S3 Role Assignments**
+
 
