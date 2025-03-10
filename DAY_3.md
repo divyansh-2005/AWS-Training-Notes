@@ -47,6 +47,7 @@ Amazon S3 is a highly scalable, durable, and secure object storage service used 
 | **S3 Glacier** | Low-cost, long-term archival storage with retrieval times from minutes to hours. |
 | **S3 Glacier Deep Archive** | The lowest-cost option for data rarely accessed, with retrieval times of hours. |
 
+![](./images/WhatsApp%20Image%202025-03-10%20at%2014.24.03_a5a04ab7.jpg)
 ---
 ### **Amazon S3 Use Cases**
 1. **Backup and Restore** - Securely store backups with versioning for protection.
@@ -102,6 +103,7 @@ Amazon S3 follows a **pay-as-you-go** pricing model based on:
 1. Create a **source bucket** in one AWS region.
 2. Create a **target bucket** in another AWS region.
 3. In the source bucket, go to **Management → Create Replication Rule**.
+![](./images/image23.png)
 4. Add the target bucket.
 5. Any objects added to the source bucket will automatically be copied to the target bucket.
 
