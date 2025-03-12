@@ -247,3 +247,26 @@ You're setting up an **AI/ML server** on EC2 with TensorFlow, PyTorch, and other
 | Use Case | Launch instances | Backup EBS volumes |
 
 ---
+
+
+# AWS Activity: Security Group & EC2 in Different Regions
+
+## Steps:
+1. **Create a Security Group (SG) in Region 1**  
+2. **Create an EC2 instance in Region 2**  
+3. **Attempt to attach the SG from Region 1 to the EC2 in Region 2**  
+
+## Output:
+🚫 **The Security Group (SG) will not be available in Region 2.**  
+
+## **Why is the Security Group (SG) Not Available in Region 2?**  
+Security Groups (SGs) are **region-specific**, meaning they only exist in the AWS region where they were created. When you try to attach an SG from **Region 1** to an EC2 instance in **Region 2**, it won’t be available because AWS does not automatically replicate SGs across regions.
+
+---
+
+## **Why Does a Security Group Ask for a VPC?**  
+A Security Group (SG) is **associated with a Virtual Private Cloud (VPC)** because:  
+1. **SGs are a VPC-level feature** → They control inbound & outbound traffic within a VPC.  
+2. **Different VPCs have separate networking rules** → An SG must belong to a specific VPC to enforce security rules.  
+3. **AWS Networking Isolation** → Each region has its own VPCs, so an SG from one region **cannot** be used in another region.  
+
