@@ -157,8 +157,8 @@ Lifecycle rules **help manage storage efficiently**, making them essential for *
   ssh -i "your-key.pem" ec2-user@your-instance-ip
   ```
 - **Ensure Security Group Rules:**  
-  - **Inbound Rules:** Allow SSH (Port **22**) for remote access.  
-  - **Outbound Rules:** Define traffic allowed out of the instance.  
+  - **Inbound Rules:** Allow SSH (Port **22**) for remote access.  By default deny
+  - **Outbound Rules:** Define traffic allowed out of the instance. By default allow
 
 ![](./images//day4_6.png)
 ---
