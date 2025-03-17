@@ -270,3 +270,49 @@ A Security Group (SG) is **associated with a Virtual Private Cloud (VPC)** becau
 2. **Different VPCs have separate networking rules** → An SG must belong to a specific VPC to enforce security rules.  
 3. **AWS Networking Isolation** → Each region has its own VPCs, so an SG from one region **cannot** be used in another region.  
 
+
+## Sport Instance
+Spot Instances in AWS are a cost-effective way to use Amazon EC2 computing resources. They allow you to take advantage of unused EC2 capacity at significantly lower prices compared to On-Demand instances. However, AWS can reclaim Spot Instances if it needs the capacity for On-Demand or Reserved Instances.  
+
+### **Key Points About Spot Instances:**
+- **Cost Savings:** Spot Instances can be up to 90% cheaper than On-Demand instances.
+- **Flexibility:** Best suited for workloads that are fault-tolerant, such as batch processing, machine learning training, and big data processing.
+- **Interruption Handling:** AWS can reclaim the instance with a two-minute warning, so applications should be designed to handle interruptions.
+- **Spot Fleet & Spot Blocks:** You can use Spot Fleets to manage multiple Spot Instances or Spot Blocks to run instances for a fixed duration.
+
+---
+
+### **ConvStable RS (Convertible Reserved Instances)**
+This seems to refer to **Convertible Reserved Instances (Convertible RIs)** in AWS. These are a type of **Reserved Instance (RI)** that allows users to change instance families, OS, or tenancies during the reservation period. They offer flexibility compared to **Standard Reserved Instances**, though they provide slightly lower discounts.
+
+---
+
+The main differences between **Spot, On-Demand, and Reserved Instances** in AWS EC2 are cost, flexibility, and reliability. Here's a comparison:  
+
+| Feature            | **Spot Instances** | **On-Demand Instances** | **Reserved Instances** |
+|--------------------|------------------|------------------------|----------------------|
+| **Pricing**        | Up to 90% cheaper than On-Demand | Standard pricing | Up to 75% discount vs. On-Demand |
+| **Availability**   | AWS can terminate anytime with a 2-minute warning | Always available | Always available |
+| **Use Case**       | Fault-tolerant, batch jobs, ML training, big data processing | Short-term, unpredictable workloads | Long-term, steady workloads |
+| **Commitment**     | No commitment | No commitment | 1-year or 3-year commitment |
+| **Flexibility**    | Can be interrupted | Flexible but expensive | Limited flexibility (Standard RIs) or some flexibility (Convertible RIs) |
+| **Best For**       | Workloads that can handle interruptions | Short-lived applications and testing | Predictable workloads needing cost savings |
+
+### **When to Use Each?**
+- **Spot Instances** → Use for **ML training, big data processing, batch jobs, and fault-tolerant workloads** where occasional interruptions are okay.
+- **On-Demand Instances** → Use when you **need flexibility**, such as running development/test environments or handling unpredictable traffic.
+- **Reserved Instances** → Use for **long-term, stable workloads** like databases, backend servers, or applications running 24/
+---
+
+### **Capacity in AWS**
+AWS capacity is divided into different compute resources, mainly **EC2 instances** and other computing services.
+
+1. **Compute Capacity**
+   - Includes **EC2 instances**, AWS Lambda, AWS Batch, and ECS/Fargate for containerized applications.
+   - Spot Instances, On-Demand Instances, and Reserved Instances contribute to EC2’s compute capacity.
+
+2. **EC2 Capacity**
+   - EC2 provides **scalable virtual machines** for computing tasks.
+   - Capacity can be adjusted using **Auto Scaling Groups** and **Elastic Load Balancers**.
+   - AWS regions and availability zones impact EC2 capacity distribution.
+   - **Spot Instances, On-Demand, Reserved, and Dedicated Hosts** define the way users consume EC2 capacity.
