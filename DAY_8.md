@@ -155,7 +155,7 @@ Leveraging the AWS Global Infrastructure
 - Route 53 polices
 - aws record types
 - CloudFront
-- cdn
+- cdn - delivers content to edge location
 
 
 
