@@ -4,6 +4,8 @@
 ## CloudFormation
  It is a service it allows to outline AWS infrastructure for any resource
 
+## Beanstalk
+
 ## AWS Cloud Development Kit (CDK)
  Allows use to use aws on jupyter notebook, vs code, pycharme, .. IDE
  ex: s3_client = boto3(s3);
