@@ -1,4 +1,4 @@
-# **AWS Training - Day 12**
+# **AWS Training - Day 13**
 
 # Account management, Billing and Support Plan
 
@@ -7,7 +7,7 @@
     - Allows to manage multiple AWS account
 
 ## Service Control Policies (SCP)
-    - used mistly for restictions
+    - used mobustly for restictions
     - if its a service-linked role it will not come under scp
 
 ## AWS Control Tower
